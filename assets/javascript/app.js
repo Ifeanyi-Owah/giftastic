@@ -6,7 +6,7 @@ var topics = ["dog","cat","rabbit","hamster","skunk","goldfish","bird","ferret",
           
             function displayTopic(){
                 var topic = $(this).attr("data-name");
-                var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=XIFb7oJdusOywOJeSbTyygmieIf994gh&limit=10";
+                var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=XIFb7oJdusOywOJeSbTyygmieIf994gh&limit=10";
                 $.ajax({
                     url:queryURL,
                     method:"GET",
